@@ -1,0 +1,15 @@
+<ifmodule mod_headers.c>
+   Header set Access-Control-Allow-Origin "*"
+   Header set Access-Control-Credentials: "true"
+   Header set Access-Control-Allow-Methods: "*"
+   Header set Access-Control-Max-Age: "10000"
+   Header set Access-Control-Allow-Headers: "Origin, X-Requested-With, Content-Type, Accept, Authorization"
+</ifmodule>
+
+
+<IfModule mod_rewrite.c>
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.*)$ $1.php
+</IfModule>

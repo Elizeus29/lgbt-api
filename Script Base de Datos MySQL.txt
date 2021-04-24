@@ -1,0 +1,8 @@
+create table imagenesLGBT(
+id int(10) primary key,
+url varchar(250),
+descripcion varchar(20)
+);
+
+
+insert into imagenesLGBT values (1, 'https://static.euronews.com/articles/stories/03/19/41/48/1000x563_cmsv2_57470ea1-3583-5a4a-ab9f-4f8fb6ada2da-3194148.jpg', 'día del orgullo LGBT');
